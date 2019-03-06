@@ -1,0 +1,12 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 2em;
+}
+
+a {
+  color: #00B7FF;
+}
+nav {float: left;text-align: right;margin-left: -12em;width:9em;text-align: right}
+nav a {display: block;padding:0.7em 1em;text-decoration: none}
+header {padding: 0.5em;border-bottom: 1px}
