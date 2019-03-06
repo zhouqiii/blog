@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="../public/stylesheets/Login2.css"/>
+</head>
+<body>
+    <div id="parent">
+    <div id="f1"><a href="home.html">HOME</a><p><a href="Blog.html">LOGIN</a></p><p>REGISTER</p></div>
+    <div id="f2">
+        <form method="post">  
+            用户名:<input type="text"required="required" name="u"></input> </br>
+            密码:<input type="password" required="required" name="p" id="p1"></input>  </br>
+           确认密码:<input type="password" required="required" name="p" id="p2" onkeyup="validate()"/><span id="tishi"></span></input>  </br>
+           邮箱:<input type="email"required="required" name="email"></input></br>
+            <button class="but3" type="submit">注册</button>  
+        </form> 
+    </div>
+    <div id="f3">注册</div>
+</body>
+<script>
+function validate() {
+var p1 = document.getElementById("p1").value;
+var p2 = document.getElementById("p2").value;
+if(p1 == p2) {
+document.getElementById("tishi").innerHTML="<font color='green'></font>";
+document.getElementById("submit").disabled = false;
+}
+else {
+document.getElementById("tishi").innerHTML="<font color='red'>密码不同</font>";
+document.getElementById("submit").disabled = true;
+}
+}
+</script>
+</html>
